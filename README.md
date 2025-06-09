@@ -41,11 +41,7 @@ git clone https://github.com/DimaChepuchtanov/Admin_tg.git
 cd Admin_tg
 
 # Создайте .env файл с вашими настройками
-echo "PG_USER = postgres" > .env
-echo "PG_PASSWORD = 1q2w3e4r" > .env
-echo "PG_HOST = postgres" > .env
-echo "PG_PORT = 5432" > .env
-echo "PG_DB = post_tg" > .env
+echo PG_USER = 'postgres' PG_PASSWORD = '1q2w3e4r' PG_HOST = "postgres" PG_PORT = "5432" PG_DB = "post_tg" > .env
 
 # Запустите проект
 docker-compose up -d --build
@@ -53,7 +49,7 @@ docker-compose up -d --build
 
 
 ### Использование Telegram бота
-Для использования бота, нужно запустить файл main.py
+Для использования бота, нужно запустить файл bot.py
 Ссылка на бота @hh_token_test_bot
 
 # Используйте команды:
